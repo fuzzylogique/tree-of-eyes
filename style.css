@@ -134,6 +134,8 @@ main {
   pointer-events: none;
 }
 
+.eye .key.wide { font-size: 7.5px; }
+
 .eye .ring {
   fill: none;
   stroke: var(--accent);

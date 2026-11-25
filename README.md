@@ -1,8 +1,8 @@
-# Tree of Eyes
+# Tree of Many Eyes
 
 A self-balancing binary search tree in which every node is an eye.
 
-The Scaveng list asked for a "Tree of Eyes". It did not say what kind of tree. This is an AVL tree. Every node is an eye, the eyes follow your cursor, and the whole tree rolls its eyes whenever your inserts force it to rebalance.
+Item #115 on the Scaveng list asks for a "Tree of many Eyes". It does not say what kind of tree, or how many. This is an AVL tree, and the answer is up to 127. Every node is an eye, the eyes follow your cursor, and the whole tree rolls its eyes whenever your inserts force it to rebalance.
 
 ```
 (◉ 42)
@@ -16,10 +16,10 @@ The Scaveng list asked for a "Tree of Eyes". It did not say what kind of tree. T
 
 ## See it
 
-Open `index.html` in a browser. There is nothing to install and nothing to build.
+Live at **https://fuzzylogique.github.io/tree-of-eyes/**, or open `index.html` in a browser. There is nothing to install and nothing to build.
 
-- Type a number from 1 to 99 and open an eye.
-- Click an eye to close it.
+- Type a number from 1 to 999 and open an eye, or open ten at once.
+- Click an eye to close it. Hover over a small one and it widens so you can read it.
 - Insert numbers in sorted order and watch the tree roll its eyes.
 - Run a traversal and the eyes light up in order.
 
@@ -89,11 +89,11 @@ The suite includes an eye exam: five thousand random opens and closes, checked a
 **Is this what the task meant?**
 We have looked into it.
 
-**Why does it stop at 31 eyes?**
-The tree has seen enough.
+**How many is many?**
+127, which is seven full levels. After that the tree has seen enough.
 
 **Does it scale?**
-The data structure does. Sorted input of 1,023 keys gives a depth perception of exactly 10. The page stops at 31 because past that it gets hard to maintain eye contact.
+The data structure does. Sorted input of 1,023 keys gives a depth perception of exactly 10. The page stops at 127 because past that it gets hard to maintain eye contact.
 
 **Has this been peer reviewed?**
 It has been reviewed by its pupils.
