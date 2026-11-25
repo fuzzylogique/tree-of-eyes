@@ -1,0 +1,12 @@
+{
+  "name": "tree-of-eyes",
+  "version": "20.20.0",
+  "description": "A self-balancing binary search tree in which every node is an eye.",
+  "private": true,
+  "main": "src/eye-tree.js",
+  "scripts": {
+    "test": "node --test",
+    "start": "python3 -m http.server 8020"
+  },
+  "license": "MIT"
+}

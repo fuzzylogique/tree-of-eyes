@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tree of Eyes</title>
+  <meta name="description" content="A self-balancing binary search tree in which every node is an eye.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23f3eddd'/%3E%3Ccircle cx='16' cy='16' r='8.5' fill='%23c9882b'/%3E%3Ccircle cx='16' cy='16' r='4.5' fill='%2314121a'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="title">
+      <h1>Tree of Eyes</h1>
+      <p class="dek">A self-balancing binary search tree in which every node is an eye. It keeps your numbers in order, and it watches you while it does.</p>
+    </div>
+    <dl class="stats">
+      <div><dt>Eyes</dt><dd id="stat-eyes">0</dd></div>
+      <div><dt>Depth perception</dt><dd id="stat-depth">0</dd></div>
+      <div><dt>Eye rolls</dt><dd id="stat-rolls">0</dd></div>
+    </dl>
+  </header>
+
+  <main>
+    <svg id="scene" role="group" aria-label="The tree. Every node is an eye." preserveAspectRatio="xMidYMax meet" viewBox="-250 -400 500 446">
+      <rect class="ground" x="-5000" y="0" width="10000" height="3000"/>
+      <ellipse class="ground" cx="0" cy="18" rx="300" ry="28"/>
+      <g id="roots">
+        <path d="M0 6 Q-24 2 -54 16"/>
+        <path d="M0 6 Q26 0 60 16"/>
+      </g>
+      <g id="branches"><path id="trunk"/></g>
+      <g id="eyes"></g>
+    </svg>
+  </main>
+
+  <footer class="dock">
+    <p id="caption" role="status">The tree is waking up.</p>
+    <div class="controls">
+      <form id="open-form" autocomplete="off">
+        <label class="visually-hidden" for="key">A whole number from 1 to 99</label>
+        <input id="key" type="number" min="1" max="99" step="1" inputmode="numeric" placeholder="1–99">
+        <button class="primary" type="submit">Open an eye</button>
+      </form>
+      <button id="random" type="button">Open a random eye</button>
+      <div class="group" role="group" aria-label="Traversals">
+        <button type="button" data-walk="foresight" title="Pre-order traversal">Foresight</button>
+        <button type="button" data-walk="insight" title="In-order traversal">Insight</button>
+        <button type="button" data-walk="hindsight" title="Post-order traversal">Hindsight</button>
+        <button type="button" data-walk="eyeLevel" title="Level-order traversal">Eye level</button>
+      </div>
+      <button id="shut" type="button">Shut all eyes</button>
+    </div>
+    <p class="fine">Click an eye to close it. Rotations are eye rolls. All operations run in O(log n), or the blink of an eye.</p>
+  </footer>
+
+  <script src="src/eye-tree.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
