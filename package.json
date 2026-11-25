@@ -1,5 +1,5 @@
 {
-  "name": "tree-of-eyes",
+  "name": "tree-of-many-eyes",
   "version": "20.20.0",
   "description": "A self-balancing binary search tree in which every node is an eye.",
   "private": true,

@@ -16,7 +16,7 @@ Item #115 on the Scaveng list asks for a "Tree of many Eyes". It does not say wh
 
 ## See it
 
-Live at **https://fuzzylogique.github.io/tree-of-eyes/**, or open `index.html` in a browser. There is nothing to install and nothing to build.
+Live at **https://fuzzylogique.github.io/tree-of-many-eyes/**, or open `index.html` in a browser. There is nothing to install and nothing to build.
 
 - Type a number from 1 to 999 and open an eye, or open ten at once.
 - Click an eye to close it. Hover over a small one and it widens so you can read it.
